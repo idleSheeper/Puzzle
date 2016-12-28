@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet">
+</head>
+<body>
+   <div id="container">
+       <h1>PUZZLE</h1><hr>
+        <div class='menu'>
+           <div id="select-img">Select picture: 
+                <select>
+                    <option value="cat" selected>Cat</option>
+                    <option value="dogs">Dogs</option>
+                    <option value="plane">Plane</option>
+                </select>
+            </div>
+            <strong class="button reset">Reset</strong>
+            <span class="stars">
+              <form action="">
+                <input class="star star-3" id="star-3" type="radio" name="level" value='5'/>
+                <label class="star star-3" for="star-3"></label>
+                <input class="star star-2" id="star-2" type="radio" name="level" value='4' checked/>
+                <label class="star star-2" for="star-2"></label>
+                <input class="star star-1" id="star-1" type="radio" name="level" value='3'/>
+                <label class="star star-1" for="star-1"></label>
+              </form>
+            </span>
+        </div>
+        
+        <div id="box">
+            <div id='info'>Select pictures and level and play! <div class='button play'>Play!</div></div>
+        </div>
+        <div id="moves">You did 0 moves.</div>
+    </div>
+    
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
